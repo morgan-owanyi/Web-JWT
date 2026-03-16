@@ -8,8 +8,8 @@ const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use("/advice", adviceRoutes);
-app.use("/auth", authRoutes);
+app.use("/api", adviceRoutes);
+app.use("/api", authRoutes);
 
 app.get("/", (req, res) => {
     res.send("JWT Advice API Running");
